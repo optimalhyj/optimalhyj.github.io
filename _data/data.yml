@@ -117,53 +117,46 @@ publications:
     title: Selected Publications
     intro: |
         Please check the CV for a complete list of publications.
-        
-    intro: |
-        in press
+
     papers:
       - title: "A tutorial on articulatory muscles and Artisynth"
-        authors: "Jang, Hayeun"
+        authors: "Jang, Hayeun (in press)"
         conference: "Language and Linguistics Compass"
-        
-    intro: |
-        2021
-    papers:
-      - title: "Mapping of Articulatory Information into Phonological Features Using a Recurrent Neural Network" [In Korean]
+
+      - title: "Mapping of Articulatory Information into Phonological Features Using a Recurrent Neural Network (in Korean: 순환 신경망을 활용한 조음 정보와 음운 자질의 연결 연구)" 
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002777983"
-        authors: "Jang, Hayeun"
+        authors: "Jang, Hayeun (2021)"
         conference: "Journal of Language Sciences 28(4), 227-247"
 
       - title: "Atypical blending with proper nouns: A case study of Korean fandom names"
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002715851"
-        authors: "Jang, Hayeun"
+        authors: "Jang, Hayeun (2021)"
         conference: "Studies in Phonetics, Phonology and Morphology 27(1), 77-98"
 
       - title: "How cute do I sound to you?: Gender and age effects in the use and evaluation of Korean baby-talk register, Aegyo"
         link: "https://doi.org/10.1016/j.langsci.2020.101289"
-        authors: "Jang, Hayeun"
+        authors: "Jang, Hayeun (2021)"
         conference: "Language Sciences"
         
-    intro: |
-        2020
     papers:
-      - title: "Phonetic Relation of Obstruents and Nasals in Korean dialects" [In Korean]
-        link: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10508293"
-        authors: "Jang, Hayeun and Taewoo Kim"
+      - title: "Phonetic Relation of Obstruents and Nasals in Korean dialects (in Korean: 한국어 방언의 비음-저해음 관련 현상의 검토-)" 
+        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002659811"
+        authors: "Jang, Hayeun and Taewoo Kim (2020)"
         conference: "Eoneohag 88, 167-195"   
       
-      - title: "A Study of Korean sound-meaning association biases using Pokémon data" [In Korean]
-        link: "https://kiss.kstudy.com/thesis/thesis-view.asp?key=3838335"
-        authors: "Jang, Hayeun"
+      - title: "A Study of Korean sound-meaning association biases using Pokémon data (in Korean: 포켓몬 데이터를 통해 살펴본 한국어 음성-의미 대응 양상 연구)"
+        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002653864"
+        authors: "Jang, Hayeun (2020)"
         conference: "Language & Information Society 41, 87-110"   
       
       - title: "Segmental factors in variations of Korean vowel harmony: A corpus approach"
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002631392"
-        authors: "Jang, Hayeun"
+        authors: "Jang, Hayeun (2020)"
         conference: "Korean Journal of Linguistics 45(3), 745-764"   
         
       - title: "Palatals contribute to syllable weight: evidence from Spanish stress assignment"
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002623237"
-        authors: "Jang, Hayeun"
+        authors: "Jang, Hayeun (2020)"
         conference: "Studies in Phonetics, Phonology and Morphology 26(2), 321-340"   
         
 skills:
