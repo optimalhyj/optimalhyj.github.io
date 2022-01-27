@@ -24,6 +24,12 @@ sidebar:
       - idiom: English
         level: Professional
         
+      - idiom: Praat, Python, R
+        level: Professional
+        
+      - idiom: Matlab
+        level: Good
+        
 career-profile:
     title: Research Interests 
     summary: |
@@ -31,9 +37,7 @@ career-profile:
       experimental phonetics and phonology, computational phonology, 
       register-specific phonology (phonological strategies for cuteness and Korean Aegyo)
 
-experiences:
-    title: Academic Positions
-    
+experiences:    
     - role: Assistant Professor
       time: 2021 - Present
       company: Busan University of Foreign Studies, South Korea
@@ -71,7 +75,6 @@ experiences:
           - Teaching lab sessions (1.5 hours each week * 3 labs per semester)
 
 education:
-    title: Education
     
     - degree: Ph.D. in Linguistics
       university: University of Southern California
@@ -162,18 +165,6 @@ publications:
         authors: "Jang, Hayeun (2020)"
         conference: "Studies in Phonetics, Phonology and Morphology 26(2), 321-340"   
         
-skills:
-    title: Skills
-
-    toolset:
-      - name: Praat
-        level: 95%
-
-      - name: Python, R
-        level: 95%
-
-      - name: Matlab
-        level: 80%
 
 footer: >
     Theme by <a href="https://jekyllthemes.io/theme/online-cv" target="_blank" rel="nofollow">Online CV</a>
