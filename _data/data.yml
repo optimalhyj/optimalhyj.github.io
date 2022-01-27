@@ -3,12 +3,13 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Hayeun Jang [haːjʌn d͡ʒaŋ]
     tagline: Linguist
+    tagline: Phonologist
     avatar: me.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -23,19 +24,13 @@ sidebar:
 
       - idiom: English
         level: Professional
-
-      - idiom: Python, R, Praat
-        level: Professional
-        
-      - idiom: Matlab
-        level: Good
         
 career-profile:
     title: Research Interests 
     summary: |
       Phonetics-phonology interface, articulatory synergies and phonological representation,
       experimental phonetics and phonology, computational phonology, 
-      register-specific phonology (cuteness!)
+      register-specific phonology (phonological strategies for cuteness and Korean Aegyo)
 
 experiences:
     - role: Assistant Professor
@@ -68,11 +63,8 @@ experiences:
       time: 2015 – 2018
       company: University of Southern California, USA
       details: |
-        Human Language and Technology (Undergraduate, G.E.)
-        : phonetics and speech recognition (matlab programming)
-          with Prof. Louis Goldstein: F2015, F2017
-               Prof. Khalil Iskarous: S2016
-               Prof. Mary Byram Washburn: F2016, S2017, S2018
+        Human Language and Technology (Undergraduate, G.E.) - phonetics and speech recognition (matlab programming) 
+        with Prof. Louis Goldstein (F2015, F2017), Prof. Khalil Iskarous (S2016), and Prof. Mary Byram Washburn (F2016, S2017, S2018)
           - Grading of exams and assignments
           - Student management (2 hours each week of office hours)
           - Teaching lab sessions (1.5 hours each week * 3 labs per semester)
@@ -126,25 +118,55 @@ publications:
     title: Selected Publications
     intro: |
         Please check the CV for a complete list of publications.
+        
+    intro: |
+        in press
     papers:
       - title: "A tutorial on articulatory muscles and Artisynth"
-        link: "#"
-        authors: Jang, Hayeun
-        year: in press
+        authors: "Jang, Hayeun"
         conference: "Language and Linguistics Compass"
-
-      - title: "Mapping of Articulatory Information into Phonological Features Using a Recurrent Neural Network [In Korean]"
+        
+    intro: |
+        2021
+    papers:
+      - title: "Mapping of Articulatory Information into Phonological Features Using a Recurrent Neural Network" [In Korean]
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002777983"
-        authors: Jang, Hayeun
-        year: 2021
+        authors: "Jang, Hayeun"
         conference: "Journal of Language Sciences 28(4), 227-247"
 
       - title: "Atypical blending with proper nouns: A case study of Korean fandom names"
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002715851"
         authors: Jang, Hayeun
-        year: 
         conference: "Studies in Phonetics, Phonology and Morphology 27(1), 77-98"
 
+      - title: "How cute do I sound to you?: Gender and age effects in the use and evaluation of Korean baby-talk register, Aegyo"
+        link: "https://doi.org/10.1016/j.langsci.2020.101289"
+        authors: Jang, Hayeun
+        conference: "Language Sciences"
+        
+    intro: |
+        2020
+    papers:
+      - title: "Phonetic Relation of Obstruents and Nasals in Korean dialects" [In Korean]
+        link: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10508293"
+        authors: "Jang, Hayeun and Taewoo Kim"
+        conference: "Eoneohag 88, 167-195"   
+      
+      - title: "A Study of Korean sound-meaning association biases using Pokémon data" [In Korean]
+        link: "https://kiss.kstudy.com/thesis/thesis-view.asp?key=3838335"
+        authors: "Jang, Hayeun"
+        conference: "Language & Information Society 41, 87-110"   
+      
+      - title: "Segmental factors in variations of Korean vowel harmony: A corpus approach"
+        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002631392"
+        authors: "Jang, Hayeun"
+        conference: "Korean Journal of Linguistics 45(3), 745-764"   
+        
+      - title: "Palatals contribute to syllable weight: evidence from Spanish stress assignment"
+        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002623237"
+        authors: "Jang, Hayeun"
+        conference: "Studies in Phonetics, Phonology and Morphology 26(2), 321-340"   
+        
 skills:
     title: Skills
 
