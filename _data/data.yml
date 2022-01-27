@@ -7,15 +7,16 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Hayeun Jang
+    name: Hayeun Jang [haːjʌn d͡ʒaŋ]
     tagline: Linguist
     avatar: me.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: hyj@bufs.ac.kr
+    address: D530, 65, Geumsaem-ro 485-gil, Geumjeong-gu, Busan 46234, South Korea
     website: optimalhyj.github.io #do not add http://
-    pdf: http://www.africau.edu/images/default/sample.pdf
-
+    pdf: https://drive.google.com/file/d/1B1p3P5fbzgh3csPQ1THcxB8_9Qfpk7cB/view?usp=sharing
+        
     languages:
       - idiom: Korean
         level: Native
@@ -23,156 +24,139 @@ sidebar:
       - idiom: English
         level: Professional
 
-    interests:
-      - item: Hawaii Hula dance
-        link:
-
-      - item: K-pop
-        link:
-
-      - item: Crochet
-        link:
-
+      - idiom: Python, R, Praat
+        level: Professional
+        
+      - idiom: Matlab
+        level: Good
+        
 career-profile:
-    title: Career Profile
+    title: Research Interests 
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
-education:
-    - degree: MSc in Computer Science
-      university: University of London
-      time: 2011 - 2012
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - degree: BSc in Applied Mathematics
-      university: Bristol University
-      time: 2007 - 2011
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+      Phonetics-phonology interface, articulatory synergies and phonological representation,
+      experimental phonetics and phonology, computational phonology, 
+      register-specific phonology (cuteness!)
+
 experiences:
-    - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
+    - role: Assistant Professor
+      time: 2021 - Present
+      company: Busan University of Foreign Studies, South Korea
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
-          - Bullet point
-          - Bullet point
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
+        Department of English
+          - English, society and culture: sociolinguistics (S2021, 2022)
+          - English pronunciation practice: phonetics and phonology (S2021, 2022)
+          - Writing business documents in English: English writing (S2021, 2022)
+          - English and fields of academic study: English reading (F2021)
+          - English and big data: R programming and text analysis (F2021)
+          - English word practice: morphology (F2021)
+          - [Graduate] English phonology (F2021)
+          - [Graduate] English morphology (F2021)
+          - Web-based English: corpus linguistics (S2022)
+          - [Graduate] Seminar in applied linguistics (S2022)
+          
+    - role: Postdoctoral Fellow
+      time: 2020 – 2021
+      company: Seoul National University, South Korea
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - role: UI Developer
-      time: 2012 - 2014
-      company: Amazon, London
+        Department of Linguistics (Advisor: Jongho Jun) 
+          - Selection and purchase of laboratory equipment and furniture
+          - Management of undergraduate RAs
+          - Organization of the colloquium
+          - Organization of the laboratory workshop
+          
+    - role: Teaching Assistant
+      time: 2015 – 2018
+      company: University of Southern California, USA
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-projects:
-    title: Projects
-    intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+        Human Language and Technology (Undergraduate, G.E.)
+        : phonetics and speech recognition (matlab programming)
+          with Prof. Louis Goldstein: F2015, F2017
+               Prof. Khalil Iskarous: S2016
+               Prof. Mary Byram Washburn: F2016, S2017, S2018
+          - Grading of exams and assignments
+          - Student management (2 hours each week of office hours)
+          - Teaching lab sessions (1.5 hours each week * 3 labs per semester)
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
-
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+education:
+    - degree: Ph.D. in Linguistics
+      university: University of Southern California
+      time: 2014 – 2020
+      details: |
+        Typology of coronal palatalization,
+        articulatory phonetics (tongue musculature), 
+        3D tongue simulation using ArtiSynth,
+        phonetics-phonology mapping modeling using a neural net, 
+        gradience in phonological representations,
+        Harmonic Grammar model
+          - Advisor: Rachel Walker
+          - Dissertation: “Articulatory Knowledge in Phonological Computation”
+          - Committee: Rachel Walker (Chair), Khalil Iskarous, Stephanie Shih, Andrew Gracey
+          
+    - degree: M.A. in Linguistics
+      university: University of Southern California
+      time: 2014 – 2016
+      details: |
+        Swedish high tone dissimilation,
+        formalization of the Obligatory Contour Principle (OCP),
+        logical conjunctions of stringently-defined scalar degrees,
+        Optimality Theoretic model
+          - Thesis: “Constraint schema of the OCP: interactions between similarity and proximity”
+          - Committee: Rachel Walker (Chair), Louis Goldstein, Karen Jesney
+          
+    - degree: Ph.D. student in Linguistics
+      university: Seoul National University
+      time: 2011 – 2014
+      details: |
+        Computational linguistics (sentiment analysis)
+        
+    - degree: M.A. in Linguistics
+      university: Seoul National University
+      time: 2008 – 2011
+      details: |
+          - Advisor: Hyopil Shin
+          - Thesis: “Sentiment analysis of Korean: a linguistic feature-based approach” 
+          
+    - degree: B.A. in Linguistics (major) and Journalism (minor)
+      university: Seoul National University
+      time: 2005 – 2008
+      details: |
+        with Summa Cum Laude          
 
 publications:
-    title: Publications
+    title: Selected Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+        Please check the CV for a complete list of publications.
     papers:
-      - title: The Art of Computer Programming
+      - title: "A tutorial on articulatory muscles and Artisynth"
         link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+        authors: Jang, Hayeun
+        year: in press
+        conference: "Language and Linguistics Compass"
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+      - title: "Mapping of Articulatory Information into Phonological Features Using a Recurrent Neural Network [In Korean]"
+        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002777983"
+        authors: Jang, Hayeun
+        year: 2021
+        conference: "Journal of Language Sciences 28(4), 227-247"
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: "Atypical blending with proper nouns: A case study of Korean fandom names"
+        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002715851"
+        authors: Jang, Hayeun
+        year: 
+        conference: "Studies in Phonetics, Phonology and Morphology 27(1), 77-98"
 
 skills:
-    title: Skills &amp; Proficiency
+    title: Skills
 
     toolset:
-      - name: Python & Django
-        level: 98%
-
-      - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
+      - name: Praat
         level: 95%
 
-      - name: Ruby on Rails
-        level: 85%
+      - name: Python, R
+        level: 95%
 
-      - name: Sketch & Photoshop
-        level: 60%
+      - name: Matlab
+        level: 80%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    Theme by <a href="https://jekyllthemes.io/theme/online-cv" target="_blank" rel="nofollow">Online CV</a>
