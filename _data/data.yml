@@ -32,6 +32,8 @@ career-profile:
       register-specific phonology (phonological strategies for cuteness and Korean Aegyo)
 
 experiences:
+    title: Academic Positions
+    
     - role: Assistant Professor
       time: 2021 - Present
       company: Busan University of Foreign Studies, South Korea
@@ -69,6 +71,8 @@ experiences:
           - Teaching lab sessions (1.5 hours each week * 3 labs per semester)
 
 education:
+    title: Education
+    
     - degree: Ph.D. in Linguistics
       university: University of Southern California
       time: 2014 – 2020
@@ -137,8 +141,7 @@ publications:
         link: "https://doi.org/10.1016/j.langsci.2020.101289"
         authors: "Jang, Hayeun (2021)"
         conference: "Language Sciences"
-        
-    papers:
+
       - title: "Phonetic Relation of Obstruents and Nasals in Korean dialects (in Korean: 한국어 방언의 비음-저해음 관련 현상의 검토-)" 
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002659811"
         authors: "Jang, Hayeun and Taewoo Kim (2020)"
