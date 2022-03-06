@@ -15,7 +15,7 @@ sidebar:
     email: hyj@bufs.ac.kr
     address: D530, 65, Geumsaem-ro 485-gil, Geumjeong-gu, Busan 46234, South Korea
     website: optimalhyj.github.io #do not add http://
-    pdf: https://drive.google.com/file/d/1B1p3P5fbzgh3csPQ1THcxB8_9Qfpk7cB/view?usp=sharing
+    pdf: https://drive.google.com/file/d/1QhtHVPPOWRJgIvLKeuN8tRjVMTt18wuw/view?usp=sharing
         
     languages:
       - idiom: Korean
@@ -126,8 +126,9 @@ publications:
         Please check the resume PDF (CV) for a complete list of publications.
 
     papers:
-      - title: "A tutorial on articulatory muscles and Artisynth"
-        authors: "Jang, Hayeun (in press)"
+      - title: "A tutorial on articulatory muscles and Artisynth: Tongue and suprahyoid muscles, and 3D tongue model"
+        link: "https://compass.onlinelibrary.wiley.com/doi/10.1111/lnc3.12447"
+        authors: "Jang, Hayeun (2022)"
         conference: "Language and Linguistics Compass"
 
       - title: "Mapping of Articulatory Information into Phonological Features Using a Recurrent Neural Network (in Korean: 순환 신경망을 활용한 조음 정보와 음운 자질의 연결 연구)" 
