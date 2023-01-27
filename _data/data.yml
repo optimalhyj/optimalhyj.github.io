@@ -43,16 +43,18 @@ experiences:
       company: Busan University of Foreign Studies, South Korea
       details: |
         Division of English
-          - English, society and culture: sociolinguistics (S2021, 2022)
-          - English pronunciation practice: phonetics and phonology (S2021, 2022)
-          - Writing business documents in English: English writing (S2021, 2022)
-          - English and fields of academic study: English reading (F2021)
-          - English and big data: R programming and text analysis (F2021)
-          - English word practice: morphology (F2021)
-          - [Graduate] English phonology (F2021)
+          - English pronunciation practice: phonetics and phonology (S2021,2022)
+          - English word practice: morphology (F2021, S2023)
+          - Web-based English: corpus linguistics (S2022,2023)
+          - English and big data: R programming and text analysis (F2021,2022)
+          - English, society and culture: sociolinguistics (S2021,2022)
+          - English and fields of academic study: English reading (F2021,2022, S2023)
+          - Writing business documents in English: English writing (S2021,2022)
+          - English society and listening: English listening and pronunciation (S2023)
+          - [Graduate] English phonology (F2021,2022)
           - [Graduate] English morphology (F2021)
-          - Web-based English: corpus linguistics (S2022)
-          - [Graduate] Seminar in applied linguistics (S2022)
+          - [Graduate] Seminar in applied linguistics: research methodology (S2022)
+          - [Graduate] Corpus statistics (S2023)
           
     - role: Postdoctoral Fellow
       time: 2020 – 2021
@@ -127,6 +129,11 @@ publications:
         Please check the resume PDF (CV) for a complete list of publications.
 
     papers:
+      - title: "It’s F-ing Okay!: A Corpus Study on the Pragmatic Functions of English F-word (in Korean: It’s F-ing Okay!: 영어 f-word의 화용론적 기능에 대한 코퍼스 연구)"
+        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002898205"
+        authors: "Kim, Nayoung and Hayeun Jang (2022)"
+        conference: "Language & Information Society 47, 85-106"
+        
       - title: "A tutorial on articulatory muscles and Artisynth: Tongue and suprahyoid muscles, and 3D tongue model"
         link: "https://compass.onlinelibrary.wiley.com/doi/10.1111/lnc3.12447"
         authors: "Jang, Hayeun (2022)"
