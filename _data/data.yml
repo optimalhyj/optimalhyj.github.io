@@ -129,11 +129,21 @@ publications:
         Please check the resume PDF (CV) for a complete list of publications.
 
     papers:
+      - title: "Subclinical articulatory changes of vowel parameters in Korean amyotrophic lateral sclerosis patients with perceptually normal voices"
+        link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292460"
+        authors: "Jin-Ah Kim, Hayeun Jang, Yoonji Choi, Young Gi Min, Yoon-Ho Hong, Jung-Joon Sung, and Seok-Jin Choi (2023)"
+        conference: "PLOS ONE 18(10), e0292460"
+        
       - title: "Exploring Linguistic Productivity of ChatGPT: A Comparison to L2 Learners in English Blending"
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002992600"
         authors: "Jang, Hayeun (2023)"
         conference: "Eoneohag 96, 79-98"
-    
+        
+      - title: "Monosyllabic affective hypocoristics of Korean names: formation and segmental alternation"
+        link: "https://ans-names.pitt.edu/ans/article/view/2537"
+        authors: "Jang, Hayeun (2023)"
+        conference: "Names: A Journal of Onomastics 71(2), 46-60"
+
       - title: "It’s F-ing Okay!: A Corpus Study on the Pragmatic Functions of English F-word (in Korean: It’s F-ing Okay!: 영어 f-word의 화용론적 기능에 대한 코퍼스 연구)"
         link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002898205"
         authors: "Kim, Nayoung and Hayeun Jang (2022)"
