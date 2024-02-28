@@ -12,8 +12,8 @@ sidebar:
     avatar: me.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hyj@bufs.ac.kr
-    address: D530, 65, Geumsaem-ro 485-gil, Geumjeong-gu, Busan 46234, South Korea
+    email: hyjang@skku.edu
+    address: 32627, Toegye Hall of Humanities, Sungkyunkwan University (Humanities and Social Sciences Campus), 25-2 Sungkyunkwan-ro, Jongno-gu, Seoul (03063), Korea
     website: optimalhyj.github.io #do not add http://
     pdf: https://drive.google.com/file/d/1QhtHVPPOWRJgIvLKeuN8tRjVMTt18wuw/view?usp=sharing
         
@@ -37,9 +37,14 @@ career-profile:
       experimental phonetics and phonology, computational phonology, 
       register-specific phonology (phonological strategies for cuteness and Korean Aegyo)
 
-experiences:    
+experiences:
     - role: Assistant Professor
-      time: 2021 - Present
+      time: 2024.03 - 
+      company: Sungkyunkwan University, South Korea
+      details: |
+        Department of English Language and Literature
+    - role: Assistant Professor
+      time: 2021.03 - 2024.02
       company: Busan University of Foreign Studies, South Korea
       details: |
         Division of English
@@ -57,7 +62,7 @@ experiences:
           - [Graduate] Corpus statistics (S2023)
           
     - role: Postdoctoral Fellow
-      time: 2020 – 2021
+      time: 2020.08 – 2021.01
       company: Seoul National University, South Korea
       details: |
         Department of Linguistics (Advisor: Jongho Jun) 
