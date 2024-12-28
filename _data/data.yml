@@ -43,6 +43,9 @@ experiences:
       company: Sungkyunkwan University, South Korea
       details: |
         Department of English Language and Literature
+          - English linguistics 101 (S2024)
+          - Data science for language analysis (F2024)
+          - [Graduate] Research methods in English phonetics (F2024)
     - role: Assistant Professor
       time: 2021.03 - 2024.02
       company: Busan University of Foreign Studies, South Korea
@@ -134,6 +137,11 @@ publications:
         Please check the resume PDF (CV) for a complete list of publications.
 
     papers:
+      - title: "How labial and alveolar consonants evoke the images of softness and cuteness?: Experiments with Korean speakers"
+        link: "https://www.sciencedirect.com/science/article/pii/S0024384124001992?via%3Dihub"
+        authors: "Jang, Hayeun (2025)"
+        conference: "Lingua"
+        
       - title: "How Brand Names Affect Consumer Perceptions: An Experimental Study on the Sound Symbolism of Foreign Brand Names"
         link: "https://www.tandfonline.com/doi/full/10.1080/08911762.2023.2299011"
         authors: "Jang, Hayeun, Ju Yeun Jang, and Do Yuon Kim (2024)"
@@ -144,60 +152,20 @@ publications:
         authors: "Kim, Jin-Ah, Hayeun Jang (co-1st author), Yoonji Choi, Young Gi Min, Yoon-Ho Hong, Jung-Joon Sung, and Seok-Jin Choi (2023)"
         conference: "PLOS ONE 18(10), e0292460"
         
-      - title: "Exploring Linguistic Productivity of ChatGPT: A Comparison to L2 Learners in English Blending"
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002992600"
-        authors: "Jang, Hayeun (2023)"
-        conference: "Eoneohag 96, 79-98"
-        
       - title: "Monosyllabic affective hypocoristics of Korean names: formation and segmental alternation"
         link: "https://ans-names.pitt.edu/ans/article/view/2537"
         authors: "Jang, Hayeun (2023)"
         conference: "Names: A Journal of Onomastics 71(2), 46-60"
-
-      - title: "It’s F-ing Okay!: A Corpus Study on the Pragmatic Functions of English F-word (in Korean: It’s F-ing Okay!: 영어 f-word의 화용론적 기능에 대한 코퍼스 연구)"
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002898205"
-        authors: "Kim, Nayoung and Hayeun Jang (2022)"
-        conference: "Language & Information Society 47, 85-106"
         
       - title: "A tutorial on articulatory muscles and Artisynth: Tongue and suprahyoid muscles, and 3D tongue model"
         link: "https://compass.onlinelibrary.wiley.com/doi/10.1111/lnc3.12447"
         authors: "Jang, Hayeun (2022)"
         conference: "Language and Linguistics Compass"
 
-      - title: "Mapping of Articulatory Information into Phonological Features Using a Recurrent Neural Network (in Korean: 순환 신경망을 활용한 조음 정보와 음운 자질의 연결 연구)" 
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002777983"
-        authors: "Jang, Hayeun (2021)"
-        conference: "Journal of Language Sciences 28(4), 227-247"
-
-      - title: "Atypical blending with proper nouns: A case study of Korean fandom names"
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002715851"
-        authors: "Jang, Hayeun (2021)"
-        conference: "Studies in Phonetics, Phonology and Morphology 27(1), 77-98"
-
       - title: "How cute do I sound to you?: Gender and age effects in the use and evaluation of Korean baby-talk register, Aegyo"
         link: "https://doi.org/10.1016/j.langsci.2020.101289"
         authors: "Jang, Hayeun (2021)"
         conference: "Language Sciences"
-
-      - title: "Phonetic Relation of Obstruents and Nasals in Korean dialects (in Korean: 한국어 방언의 비음-저해음 관련 현상의 검토-)" 
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002659811"
-        authors: "Jang, Hayeun and Taewoo Kim (2020)"
-        conference: "Eoneohag 88, 167-195"   
-      
-      - title: "A Study of Korean sound-meaning association biases using Pokémon data (in Korean: 포켓몬 데이터를 통해 살펴본 한국어 음성-의미 대응 양상 연구)"
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002653864"
-        authors: "Jang, Hayeun (2020)"
-        conference: "Language & Information Society 41, 87-110"   
-      
-      - title: "Segmental factors in variations of Korean vowel harmony: A corpus approach"
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002631392"
-        authors: "Jang, Hayeun (2020)"
-        conference: "Korean Journal of Linguistics 45(3), 745-764"   
-        
-      - title: "Palatals contribute to syllable weight: evidence from Spanish stress assignment"
-        link: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002623237"
-        authors: "Jang, Hayeun (2020)"
-        conference: "Studies in Phonetics, Phonology and Morphology 26(2), 321-340"   
         
 
 footer: >
