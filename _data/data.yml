@@ -38,14 +38,19 @@ career-profile:
       register-specific phonology (phonological strategies for cuteness and Korean Aegyo)
 
 experiences:
+    - role: Associate Professor
+      time: 2025.09 -
+      company: Sungkyunkwan University, South Korea
     - role: Assistant Professor
-      time: 2024.03 - 
+      time: 2024.03 - 2025.08
       company: Sungkyunkwan University, South Korea
       details: |
         Department of English Language and Literature
           - English linguistics 101 (S2024)
-          - Data science for language analysis (F2024)
+          - English phonetics (S2025)
+          - Data science for language analysis (F2024, F2025)
           - [Graduate] Research methods in English phonetics (F2024)
+          - [Graduate] English phonology (S2025)
     - role: Assistant Professor
       time: 2021.03 - 2024.02
       company: Busan University of Foreign Studies, South Korea
