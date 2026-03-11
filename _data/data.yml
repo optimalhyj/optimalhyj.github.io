@@ -40,6 +40,9 @@ career-profile:
 experiences:
     - role: Associate Professor
       time: 2025.09 -
+      company: Sungkyunkwan University, South Korea
+      details: |
+        Department of English Language and Literature
     - role: Assistant Professor
       time: 2024.03 - 2025.08
       company: Sungkyunkwan University, South Korea
@@ -141,6 +144,11 @@ publications:
         Please check the resume PDF (CV) for a complete list of publications.
 
     papers:
+      - title: "Phonological preparation in Korean: the role of syllable complexity and orthographic support"
+        link: "https://doi.org/10.1016/j.lingua.2026.104135"
+        authors: "Jang, Hayeun (2026)"
+        conference: "Lingua"
+        
       - title: "How labial and alveolar consonants evoke the images of softness and cuteness?: Experiments with Korean speakers"
         link: "https://doi.org/10.1016/j.lingua.2024.103868"
         authors: "Jang, Hayeun (2025)"
