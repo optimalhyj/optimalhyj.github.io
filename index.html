@@ -1,18 +1,499 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hayeun Jang · Linguist</title>
+<meta name="description" content="Hayeun Jang [haːjʌn d͡ʒaŋ] — Linguist. Phonetics–phonology interface, articulatory phonology, sound symbolism, computational phonology." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600&family=Gentium+Plus:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --band:#122A26;
+    --band-ink:#F0EDE4;
+    --band-ink-2:#A9B4AF;
+    --band-accent:#67AC9E;
+    --paper:#F1EFE9;
+    --ink:#1A1815;
+    --ink-2:#59564D;
+    --ink-3:#8B887D;
+    --rule:#D5D1C5;
+    --rule-dk:#B9B4A6;
+    --accent:#15574E;
+    --accent-ink:#0E403A;
+    --maxw:1140px;
+  }
 
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Hanken Grotesk",system-ui,sans-serif;
+    font-size:17px;line-height:1.62;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  .ipa{font-family:"Gentium Plus",serif;}
 
-{% include career-profile.html %}
+  a{color:inherit;text-decoration:none;}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:1px;}
+  .band a:focus-visible{outline-color:var(--band-accent);}
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(22px,5vw,64px);}
 
-{% include experiences.html %}
+  /* ================= MASTHEAD ================= */
+  .band{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden;}
+  .band .wrap{padding-top:clamp(40px,6vw,64px);padding-bottom:clamp(30px,4vw,42px);position:relative;z-index:2;}
 
-{% include projects.html %}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:12px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--band-accent);margin:0 0 clamp(22px,4vw,40px);
+  }
+  .masthead-name{
+    font-family:"Newsreader",serif;font-optical-sizing:auto;
+    font-weight:500;
+    font-size:clamp(50px,9.5vw,96px);
+    line-height:.96;letter-spacing:-.022em;
+    margin:0;color:var(--band-ink);
+  }
+  .masthead-ipa{
+    font-family:"Gentium Plus",serif;
+    font-size:clamp(21px,3.4vw,30px);
+    color:var(--band-accent);
+    margin:16px 0 0;letter-spacing:.01em;
+  }
 
-{% include publications.html %}
+  .band-rule{height:1px;background:rgba(240,237,228,.22);margin:clamp(26px,4vw,38px) 0 16px;}
+  .band-meta{
+    display:flex;justify-content:space-between;align-items:baseline;
+    flex-wrap:wrap;gap:10px 24px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--band-ink-2);
+  }
+  .band-meta a{color:var(--band-accent);display:inline-flex;align-items:center;gap:7px;border-bottom:1px solid transparent;transition:border-color .2s;}
+  .band-meta a:hover{border-color:var(--band-accent);}
+  .band-meta svg{width:12px;height:12px;}
 
-{% include skills.html %}
+  .contour{position:absolute;right:-40px;top:8%;width:min(46vw,560px);height:auto;z-index:1;pointer-events:none;opacity:.5;}
+  .contour path{
+    fill:none;stroke:var(--band-accent);stroke-width:1.4;stroke-linecap:round;
+    stroke-dasharray:900;stroke-dashoffset:900;
+    animation:draw 2.4s cubic-bezier(.6,0,.15,1) .4s forwards;
+  }
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  @media (max-width:760px){.contour{display:none;}}
+
+  /* ================= BODY GRID ================= */
+  .grid{
+    display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);
+    gap:clamp(36px,6vw,80px);
+    padding:clamp(52px,7vw,80px) 0 40px;align-items:start;
+  }
+  .sidebar{position:sticky;top:44px;}
+  @media (max-width:860px){
+    .grid{grid-template-columns:1fr;gap:44px;padding-top:44px;}
+    .sidebar{position:static;}
+  }
+
+  .side-label{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-3);padding-bottom:10px;margin-bottom:15px;
+    border-bottom:1px solid var(--rule-dk);
+  }
+  .side-photo{
+    width:88px;height:88px;border-radius:50%;
+    object-fit:cover;display:block;margin:0 0 22px;
+    border:1px solid var(--rule-dk);
+    filter:grayscale(1) contrast(1.02);
+    transition:filter .5s ease;
+  }
+  .side-photo:hover{filter:grayscale(.15) contrast(1);}
+  .side-mono{
+    width:88px;height:88px;border-radius:50%;
+    display:none;place-items:center;margin:0 0 22px;
+    background:var(--band);color:var(--band-accent);
+    border:1px solid var(--rule-dk);
+    font-family:"Newsreader",serif;font-weight:500;
+    font-size:32px;line-height:1;letter-spacing:.02em;
+  }
+  .role-line{
+    font-family:"Newsreader",serif;font-style:italic;font-weight:400;
+    font-size:20px;color:var(--ink);margin:0 0 26px;line-height:1.3;
+  }
+  .contact-list{list-style:none;margin:0;padding:0;}
+  .contact-list li{margin-bottom:13px;line-height:1.45;}
+  .contact-list .k{
+    display:block;font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-3);margin-bottom:2px;
+  }
+  .contact-list a{color:var(--accent);border-bottom:1px solid var(--rule-dk);transition:border-color .18s;}
+  .contact-list a:hover{border-color:var(--accent);}
+  .addr{font-size:14px;color:var(--ink-2);line-height:1.5;}
+
+  /* ================= SECTIONS ================= */
+  section{margin-bottom:clamp(44px,6vw,60px);}
+  section:last-child{margin-bottom:0;}
+  .sec-head{border-top:2px solid var(--ink);padding-top:12px;margin-bottom:26px;display:flex;align-items:baseline;gap:12px;}
+  .sec-mark{font-family:"Gentium Plus",serif;font-size:20px;color:var(--accent);line-height:1;}
+  .sec-title{
+    font-family:"Newsreader",serif;font-weight:600;
+    font-size:15px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink);margin:0;
+  }
+
+  .lede{
+    font-family:"Newsreader",serif;font-optical-sizing:auto;font-weight:400;
+    font-size:clamp(22px,2.8vw,29px);line-height:1.4;letter-spacing:-.008em;
+    margin:0 0 28px;max-width:46ch;
+  }
+  .lede em{font-style:italic;color:var(--accent-ink);}
+
+  .focus{
+    list-style:none;margin:0;padding:0;
+    display:grid;grid-template-columns:1fr 1fr;gap:0 36px;
+    border-top:1px solid var(--rule);
+  }
+  @media (max-width:520px){.focus{grid-template-columns:1fr;}}
+  .focus li{
+    padding:12px 0;border-bottom:1px solid var(--rule);
+    font-size:15.5px;color:var(--ink);display:flex;gap:11px;
+  }
+  .focus li::before{content:"/";font-family:"Gentium Plus",serif;color:var(--accent);opacity:.6;}
+
+  .tl-item{
+    display:grid;grid-template-columns:112px 1fr;gap:26px;
+    padding:22px 0;border-top:1px solid var(--rule);
+  }
+  .tl-item:last-child{border-bottom:1px solid var(--rule);}
+  @media (max-width:520px){.tl-item{grid-template-columns:1fr;gap:6px;}}
+  .tl-when{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--accent);padding-top:5px;white-space:nowrap;}
+  .tl-role{font-family:"Newsreader",serif;font-weight:600;font-size:20px;letter-spacing:-.01em;margin:0 0 3px;line-height:1.2;}
+  .tl-org{font-size:15px;color:var(--ink-2);margin:0 0 6px;}
+  .tl-detail{font-size:14.5px;color:var(--ink-2);margin:7px 0 0;line-height:1.55;}
+  .tl-detail .deg{color:var(--ink);font-family:"Newsreader",serif;font-style:italic;}
+
+  details.tl-more{margin-top:9px;}
+  details.tl-more summary{
+    cursor:pointer;list-style:none;font-family:"JetBrains Mono",monospace;
+    font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  details.tl-more summary::-webkit-details-marker{display:none;}
+  details.tl-more summary::before{content:"+";font-size:13px;}
+  details.tl-more[open] summary::before{content:"–";}
+  details.tl-more ul{margin:11px 0 0;padding-left:18px;font-size:14px;color:var(--ink-2);line-height:1.6;}
+  details.tl-more li{margin-bottom:4px;}
+
+  .tag{
+    display:inline-block;vertical-align:middle;
+    font-family:"JetBrains Mono",monospace;
+    font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--accent);border:1px solid var(--rule-dk);
+    border-radius:1px;padding:2px 7px;margin-left:9px;
+    transform:translateY(-2px);
+  }
+  .tl-item.current{border-top-color:var(--accent);}
+  .tl-item.current .tl-when::after{content:" ●";color:var(--accent);font-size:9px;vertical-align:middle;}
+  .tl-note{font-size:14px;color:var(--ink-2);margin:8px 0 0;}
+
+  .pub-intro{font-size:14.5px;color:var(--ink-2);margin:0 0 22px;}
+  .pub-intro a{color:var(--accent);border-bottom:1px solid var(--rule-dk);}
+  .pub{padding:19px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:56px 1fr;gap:22px;}
+  .pub:last-child{border-bottom:1px solid var(--rule);}
+  @media (max-width:520px){.pub{grid-template-columns:1fr;gap:4px;}}
+  .pub-yr{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent);padding-top:3px;}
+  .pub-title{
+    font-family:"Newsreader",serif;font-weight:500;font-size:19px;line-height:1.34;letter-spacing:-.005em;
+    display:inline;
+    background-image:linear-gradient(var(--accent),var(--accent));
+    background-size:0% 1px;background-position:0 100%;background-repeat:no-repeat;
+    transition:background-size .3s ease;
+  }
+  a.pub-link:hover .pub-title{background-size:100% 1px;color:var(--accent-ink);}
+  .pub-title .arr{font-family:"Hanken Grotesk";font-weight:400;color:var(--accent);opacity:0;transition:opacity .2s;font-size:15px;}
+  a.pub-link:hover .pub-title .arr{opacity:1;}
+  .pub-meta{font-size:14px;color:var(--ink-2);margin:6px 0 0;}
+  .pub-meta .venue{font-family:"Newsreader",serif;font-style:italic;color:var(--ink);font-size:15px;}
+
+  footer{border-top:2px solid var(--ink);margin-top:8px;}
+  footer .wrap{padding-top:22px;padding-bottom:56px;}
+  .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);}
+  .foot-in a{color:var(--ink-2);border-bottom:1px solid var(--rule-dk);}
+  .foot-in a:hover{color:var(--accent);border-color:var(--accent);}
+
+  @media (prefers-reduced-motion:reduce){
+    .contour path{animation:none;stroke-dashoffset:0;}
+    *{transition-duration:.01ms !important;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= MASTHEAD ================= -->
+<header class="band">
+  <svg class="contour" viewBox="0 0 560 200" aria-hidden="true">
+    <path d="M4,150 C70,146 96,64 168,68 C232,72 250,128 320,120 C398,111 420,40 556,30" />
+  </svg>
+  <div class="wrap">
+    <p class="eyebrow">Linguist — Phonetics &amp; Phonology</p>
+    <h1 class="masthead-name">Hayeun&nbsp;Jang</h1>
+    <p class="masthead-ipa">[ha&#720;j&#652;n&nbsp;d&#865;&#658;a&#331;]</p>
+    <div class="band-rule"></div>
+    <div class="band-meta">
+      <span>Sungkyunkwan University · Dept. of English Language &amp; Literature</span>
+      <a href="https://drive.google.com/file/d/1QhtHVPPOWRJgIvLKeuN8tRjVMTt18wuw/view?usp=sharing" target="_blank" rel="noopener">
+        Curriculum Vitae (PDF)
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13"/><path d="m6 11 6 6 6-6"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= BODY ================= -->
+<div class="wrap">
+  <div class="grid">
+
+    <aside class="sidebar">
+      <img class="side-photo" src="assets/images/me.png" alt="Hayeun Jang"
+           onerror="this.style.display='none';document.getElementById('mono').style.display='grid';" />
+      <div class="side-mono" id="mono" aria-hidden="true">HJ</div>
+      <p class="role-line">Working at the phonetics–phonology interface.</p>
+      <div class="side-label">Contact</div>
+      <ul class="contact-list">
+        <li><span class="k">Email</span><a href="mailto:hyjang@skku.edu">hyjang@skku.edu</a></li>
+        <li><span class="k">Web</span><a href="https://optimalhyj.github.io" target="_blank" rel="noopener">optimalhyj.github.io</a></li>
+        <li><span class="k">Office</span><span class="addr">Toegye Hall of Humanities #32627, Sungkyunkwan University, Jongno-gu, Seoul, Korea</span></li>
+      </ul>
+    </aside>
+
+    <main>
+
+      <section>
+        <div class="sec-head"><span class="sec-mark">[</span><h2 class="sec-title">Research Interests</h2></div>
+        <p class="lede">How <em>articulatory knowledge</em> shapes phonological computation — and how sound comes to carry meaning.</p>
+        <ul class="focus">
+          <li>Articulatory synergies &amp; phonological representation</li>
+          <li>Experimental phonetics &amp; phonology</li>
+          <li>Computational phonology</li>
+          <li>Sound symbolism of cuteness &amp; Korean Aegyo</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="sec-mark">[</span><h2 class="sec-title">Experience</h2></div>
+
+        <div class="tl-item">
+          <div class="tl-when">2025.09 —</div>
+          <div>
+            <p class="tl-role">Associate Professor</p>
+            <p class="tl-org">Sungkyunkwan University · Dept. of English Language &amp; Literature</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2024.03 – 25.08</div>
+          <div>
+            <p class="tl-role">Assistant Professor</p>
+            <p class="tl-org">Sungkyunkwan University · Dept. of English Language &amp; Literature</p>
+            <details class="tl-more"><summary>Courses taught</summary>
+              <ul>
+                <li>English Linguistics 101 · English Phonetics</li>
+                <li>Data Science for Language Analysis</li>
+                <li>[Grad] Research Methods in English Phonetics · English Phonology</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2021.03 – 24.02</div>
+          <div>
+            <p class="tl-role">Assistant Professor</p>
+            <p class="tl-org">Busan University of Foreign Studies · Division of English</p>
+            <details class="tl-more"><summary>Courses taught</summary>
+              <ul>
+                <li>English Phonetics &amp; Phonology · Morphology</li>
+                <li>Corpus Linguistics · R Programming &amp; Text Analysis</li>
+                <li>Sociolinguistics · English Listening &amp; Pronunciation</li>
+                <li>[Grad] English Phonology · Morphology · Corpus Statistics</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2020.08 – 21.01</div>
+          <div>
+            <p class="tl-role">Postdoctoral Fellow</p>
+            <p class="tl-org">Seoul National University · Dept. of Linguistics (Advisor: Jongho Jun)</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2015 – 2018</div>
+          <div>
+            <p class="tl-role">Teaching Assistant</p>
+            <p class="tl-org">University of Southern California · Human Language &amp; Technology</p>
+            <p class="tl-detail">Phonetics &amp; speech recognition (Matlab), with Profs. Louis Goldstein, Khalil Iskarous &amp; Mary Byram Washburn.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="sec-mark">[</span><h2 class="sec-title">Education</h2></div>
+
+        <div class="tl-item">
+          <div class="tl-when">2014 – 2020</div>
+          <div>
+            <p class="tl-role">Ph.D. in Linguistics</p>
+            <p class="tl-org">University of Southern California</p>
+            <p class="tl-detail"><span class="deg">Dissertation:</span> “Articulatory Knowledge in Phonological Computation.” Advisor: Rachel Walker. Articulatory phonetics, 3D tongue simulation (ArtiSynth), neural-net phonetics–phonology mapping, Harmonic Grammar.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2014 – 2016</div>
+          <div>
+            <p class="tl-role">M.A. in Linguistics</p>
+            <p class="tl-org">University of Southern California</p>
+            <p class="tl-detail"><span class="deg">Thesis:</span> “Constraint schema of the OCP: interactions between similarity and proximity.” Swedish high-tone dissimilation, Optimality Theory.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2011 – 2014</div>
+          <div>
+            <p class="tl-role">Ph.D. Student in Linguistics</p>
+            <p class="tl-org">Seoul National University · Computational linguistics (sentiment analysis)</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2008 – 2011</div>
+          <div>
+            <p class="tl-role">M.A. in Linguistics</p>
+            <p class="tl-org">Seoul National University</p>
+            <p class="tl-detail"><span class="deg">Thesis:</span> “Sentiment analysis of Korean: a linguistic feature-based approach.” Advisor: Hyopil Shin.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2005 – 2008</div>
+          <div>
+            <p class="tl-role">B.A. in Linguistics <span style="font-weight:400;color:var(--ink-2);font-family:'Newsreader';font-style:italic;font-size:16px;">(minor: Journalism)</span></p>
+            <p class="tl-org">Seoul National University · Summa Cum Laude</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="sec-mark">[</span><h2 class="sec-title">Grants &amp; Funding</h2></div>
+
+        <div class="tl-item current">
+          <div class="tl-when">2026 – 2029</div>
+          <div>
+            <p class="tl-role">Principal Investigator <span class="tag">Ongoing</span></p>
+            <p class="tl-org">National Research Foundation of Korea · Joint Research Program</p>
+            <p class="tl-note">Development of a Linguistics-Based Multimodal AI System for Automated Assessment of Speech and Analysis of Its Association with Clinical Indicators in Neurodegenerative Disorders.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2023 – 2026</div>
+          <div>
+            <p class="tl-role">Principal Investigator</p>
+            <p class="tl-org">National Research Foundation of Korea · Early-Career Research Program</p>
+            <p class="tl-note">An Experimental Linguistic Study on the Korean Speakers’ Phonological Preparation Unit.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2023 – 2026</div>
+          <div>
+            <p class="tl-role">Co-Investigator</p>
+            <p class="tl-org">National Research Foundation of Korea · Joint Research Program</p>
+            <p class="tl-note">A Big Data-Based Approach to Understanding Korean Elderly Speakers’ Language: Presenting Strategies for Artificial Intelligence Modeling.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="sec-mark">[</span><h2 class="sec-title">Selected Publications</h2></div>
+        <p class="pub-intro">A selection below. See the <a href="https://drive.google.com/file/d/1QhtHVPPOWRJgIvLKeuN8tRjVMTt18wuw/view?usp=sharing" target="_blank" rel="noopener">full CV</a> for the complete list.</p>
+
+        <a class="pub-link pub" href="https://doi.org/10.1016/j.lingua.2026.104135" target="_blank" rel="noopener">
+          <div class="pub-yr">2026</div>
+          <div>
+            <span class="pub-title">Phonological preparation in Korean: the role of syllable complexity and orthographic support <span class="arr">↗</span></span>
+            <p class="pub-meta">Jang, H. · <span class="venue">Lingua</span></p>
+          </div>
+        </a>
+
+        <a class="pub-link pub" href="https://doi.org/10.1016/j.lingua.2024.103868" target="_blank" rel="noopener">
+          <div class="pub-yr">2025</div>
+          <div>
+            <span class="pub-title">How labial and alveolar consonants evoke the images of softness and cuteness? Experiments with Korean speakers <span class="arr">↗</span></span>
+            <p class="pub-meta">Jang, H. · <span class="venue">Lingua</span></p>
+          </div>
+        </a>
+
+        <a class="pub-link pub" href="https://www.tandfonline.com/doi/full/10.1080/08911762.2023.2299011" target="_blank" rel="noopener">
+          <div class="pub-yr">2024</div>
+          <div>
+            <span class="pub-title">How brand names affect consumer perceptions: sound symbolism of foreign brand names <span class="arr">↗</span></span>
+            <p class="pub-meta">Jang, H., Jang, J. Y. &amp; Kim, D. Y. · <span class="venue">Journal of Global Marketing</span></p>
+          </div>
+        </a>
+
+        <a class="pub-link pub" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292460" target="_blank" rel="noopener">
+          <div class="pub-yr">2023</div>
+          <div>
+            <span class="pub-title">Subclinical articulatory changes of vowel parameters in Korean ALS patients with perceptually normal voices <span class="arr">↗</span></span>
+            <p class="pub-meta">Kim, J.-A., Jang, H. (co-1st) et al. · <span class="venue">PLOS ONE 18(10)</span></p>
+          </div>
+        </a>
+
+        <a class="pub-link pub" href="https://ans-names.pitt.edu/ans/article/view/2537" target="_blank" rel="noopener">
+          <div class="pub-yr">2023</div>
+          <div>
+            <span class="pub-title">Monosyllabic affective hypocoristics of Korean names: formation and segmental alternation <span class="arr">↗</span></span>
+            <p class="pub-meta">Jang, H. · <span class="venue">Names: A Journal of Onomastics 71(2)</span></p>
+          </div>
+        </a>
+
+        <a class="pub-link pub" href="https://compass.onlinelibrary.wiley.com/doi/10.1111/lnc3.12447" target="_blank" rel="noopener">
+          <div class="pub-yr">2022</div>
+          <div>
+            <span class="pub-title">A tutorial on articulatory muscles and ArtiSynth: tongue &amp; suprahyoid muscles, and a 3D tongue model <span class="arr">↗</span></span>
+            <p class="pub-meta">Jang, H. · <span class="venue">Language and Linguistics Compass</span></p>
+          </div>
+        </a>
+
+        <a class="pub-link pub" href="https://doi.org/10.1016/j.langsci.2020.101289" target="_blank" rel="noopener">
+          <div class="pub-yr">2021</div>
+          <div>
+            <span class="pub-title">How cute do I sound to you? Gender and age effects in the Korean baby-talk register, Aegyo <span class="arr">↗</span></span>
+            <p class="pub-meta">Jang, H. · <span class="venue">Language Sciences</span></p>
+          </div>
+        </a>
+
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>Hayeun Jang · Sungkyunkwan University</span>
+    <span><a href="mailto:hyjang@skku.edu">hyjang@skku.edu</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
